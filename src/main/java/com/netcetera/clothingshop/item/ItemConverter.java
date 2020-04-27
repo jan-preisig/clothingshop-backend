@@ -20,6 +20,7 @@ public class ItemConverter {
                 .id(item.getId())
                 .name(item.getName())
                 .price(item.getPrice())
+                .description(item.getDescription())
                 .category(CategoryConverter.convert(item.getCategory()).getName())
                 .pictures(PictureConverter.convert(item.getPictures()))
                 .build();

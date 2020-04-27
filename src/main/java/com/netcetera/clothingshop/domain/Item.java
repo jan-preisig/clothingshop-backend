@@ -39,6 +39,12 @@ public class Item extends BaseEntity {
     private BigDecimal price;
 
     /**
+     * Creates the Field 'description' on the database.
+     */
+    @Column(name = "description", nullable = false)
+    private String description;
+
+    /**
      * Maps all linking pictures to a item.
      */
     @Column(name = "pictures")
