@@ -4,6 +4,7 @@ import com.netcetera.clothingshop.picture.PictureDto;
 import lombok.Builder;
 import lombok.Getter;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Builder
@@ -11,7 +12,7 @@ import java.util.List;
 public class ItemDto {
     private long id;
     private String name;
-    private String price;
+    private BigDecimal price;
     private String category;
     private List<PictureDto> pictures;
 }

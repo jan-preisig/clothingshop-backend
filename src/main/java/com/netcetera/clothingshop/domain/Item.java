@@ -13,6 +13,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import java.math.BigDecimal;
 import java.util.List;
 
 
@@ -35,7 +36,7 @@ public class Item extends BaseEntity {
      * Creates the Field 'price' on the database.
      */
     @Column(name = "price", nullable = false)
-    private String price;
+    private BigDecimal price;
 
     /**
      * Maps all linking pictures to a item.
